@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PT Company</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/ff3a2a3758.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+  <nav id="section1">
+    <a onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary" href="#section1"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <div class="layar-dalam">
+      <div class="logo">
+        <a href="" style="text-decoration: none; color: black;"><h1 style="font-size: 25px;">Company</h1></a>
+      </div>
+      <div class="menu">
+        <a href="#" class="tombol-menu">
+          <span class="garis"></span>
+          <span class="garis"></span>
+          <span class="garis"></span>
+        </a>
+        <ul>
+          <li class="dropdown"><a href="#home">ABOUT</a>
+            <ul class="isi-dropdown">
+              <li><a href="">HISTORY</a></li>
+              <li><a href="">VISSION MISSION</a></li>
+            </ul>
+          </li>
+          <li><a href="#aboutus">OUR WORK</a></li>
+          <li><a href="#team">OUR TEAM</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="layar-penuh">
+    <header id="home">
+     <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/bg.jpg" style="width:100%">
+  <div class="text"><b> PLACE WHERE TECHNOLOGY & <br>CREATIVITY FUSED INTO DIGITAL CHEMISTRY</b></div>
+  <div class="text1" >
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="images/about-bg.jpg" style="width:100%">
+  <div class="text" ><b> WE DONT HAVE THE BEST BUT WE HAVE THE <br>GREATEST TEAM</b></div>
+  <div class="text1" >
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </div>
+  
+</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+
+  </div>
+  </header>
+  <main>
+    <section class="abuabu" id="support">
+      <h3 style="text-align: center;">OUR VALUES</h3>
+      <div class="layar-dalam support">
+        <div style="background-color: #eb7c6e;">
+          <img style="width: 10px; height: 20px; margin-top: 20px;" src="images/lightbulb-o.png" />
+          <h6>INNOVATIVE</h6>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            illum recusandae nostrum. Obcaecati, quos vel.
+          </p>
+        </div>
+        <div style="background-color: #6a996f;">
+          <img style="width: 25px; height: 25px; margin-top: 20px;" src="images/bank.png" />
+          <h6>LOYALTY</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, ea voluptatem corporis molestias obcaecati
+            deleniti.
+          </p>
+        </div>
+        <div style="background-color: #5696c2;">
+          <img style="width: 25px; height: 25px; margin-top: 20px;" src="images/balance-scale.png" />
+          <h6>RESPECT</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, ea voluptatem corporis molestias obcaecati
+            deleniti.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="abuabu" id="support">
+      <h3 style="text-align: center;">CONTACT US</h3>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Name</label>
+          <input type="text" placeholder="Your Name" id="username" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input type="email" placeholder="asd@asd.com" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Message</label><br>
+          <textarea type="" placeholder="Your message" id="message"></textarea>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+    </section>
+    <section class="quote">
+      <div class="layar-dalam">
+        <p>PT Company.</p>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div class="layar-dalam">
+      <div class="copyright">
+        Copyright&copy; 2021. PT Company<br>
+        <img style="width: 18px; height: 22px; margin-top: 20px;" src="images/facebook-official.png" />
+        <img style="width: 18px; height: 22px; margin-top: 20px;" src="images/twitter.png" />
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+  <script src="test.js"></script>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    </script>
+</body>
+
+</html>
